@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
+ body {
+  display: table;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 #head {
 		background : url("ilya-pavlov-87438.jpg") no-repeat;
 		background-size: cover;
@@ -8,11 +15,18 @@
 		padding: 70px;
 	}
 
-	#maintitle .jumbotron {
-		color: white;
-		background-color: rgba(0, 0, 0, 0.60);
-		max-width: 500px;
-		margin: 0 auto;
-	}
+.myjumbotron {
+   display: table-cell;
+   vertical-align: middle;
+   background-color: black;
+
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.jumbotronText {
+
+	color: white;
+}
 
 
