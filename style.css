@@ -1,32 +1,84 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
- body {
+body {
   display: table;
   position: absolute;
   height: 100%;
   width: 100%;
 }
 
+.blinking-cursor {
+  color: white;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
 #head {
-		background : url("ilya-pavlov-87438.jpg") no-repeat;
-		background-size: cover;
-		height: 400px;
-		padding: 70px;
-	}
+	background : black;
+	background-size: cover;
+	height: 400px;
+	padding: 70px;
+  color: white;
+}
+
+
 
 .myjumbotron {
    display: table-cell;
    vertical-align: middle;
-   background-color: black;
-
    max-width: 500px;
    margin: 0 auto;
+   color: white;
 }
 
-.jumbotronText {
 
-	color: white;
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
 }
 
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
 
