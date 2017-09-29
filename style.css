@@ -8,6 +8,7 @@ body {
   width: 100%;
 }
 
+
 .blinking-cursor {
   color: white;
   -webkit-animation: 1s blink step-end infinite;
@@ -25,6 +26,10 @@ body {
   color: white;
 }
 
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
 
 
 .myjumbotron {
