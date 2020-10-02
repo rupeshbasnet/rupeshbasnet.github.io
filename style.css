@@ -40,7 +40,9 @@ body {
    color: white;
 }
 
-
+.projects {
+  margin-top: 20px;
+}
 
 @keyframes "blink" {
   from, to {
