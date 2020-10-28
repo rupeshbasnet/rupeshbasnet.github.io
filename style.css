@@ -44,6 +44,15 @@ body {
   letter-spacing: 0.025em;
 }
 
+.crop {
+
+}
+
+.social-row {
+  margin-top: 50px;
+  letter-spacing: 0.5em;
+}
+
 .address {
   color: #ddd;
 }
