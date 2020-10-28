@@ -7,13 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<link rel="stylesheet" href="bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="font-awesome.css"/>
+	
 </head>
 <body>
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 col-sm-12">
-					<h1 class="display-4"><a class="main-icon" href="#">RUPESH BASNET<span class="blinking-cursor">_</span></a></h1>
+					<h1 class="display-4"><a id="main-title" class="main-icon" href="#"></a><span id="cursor">_</span></h1>
 					<p class="lead address">New York, NY</p>
 				</div>
 				<div class="col-md-6 col-sm-12">
@@ -102,5 +103,26 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var i = 0;
+		var txt = 'RUPESH BASNET';
+		var speed = 100;
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("main-title").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+		function addCursorBlink() {
+			var cursor = document.getElementById("cursor");
+			cursor.classList.add("blinking-cursor");
+		}
+		typeWriter();
+		(function blinker () {
+			setTimeout("addCursorBlink()", 1500);
+		})();
+	</script>
 </body>
 </html>
