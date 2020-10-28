@@ -6,11 +6,13 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
+  background-color: #fff;
+  color: #222;
 }
 
 
 .blinking-cursor {
-  color: white;
+  color: #222;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
@@ -18,12 +20,32 @@ body {
   animation: 1s blink step-end infinite;
 }
 
-#head {
-	background : black;
-	background-size: cover;
-	height: 420px;
-	padding: 70px;
-  color: white;
+.jumbotron {
+  background-color: #fff !important;
+  color: #222;
+}
+
+.main-icon{
+  color: #222;
+  text-decoration: none !important;
+  text-transform: none !important;
+  letter-spacing: 0.025em;
+}
+
+.main-icon:hover{
+  color: #999;
+  text-decoration: none !important;
+  text-transform: none !important;
+  letter-spacing: 0.025em;
+}
+
+.description {
+  margin-top: 50px;
+  letter-spacing: 0.025em;
+}
+
+.address {
+  color: #ddd;
 }
 
 .vertical-align {
@@ -31,13 +53,36 @@ body {
   align-items: center;
 }
 
+a.nav-link {
+  color: #999;
+}
+
+a.nav-link.active {
+  color: #222 !important;
+}
+
+a.nav-link:hover {
+  color: #222 !important;
+}
+
+.connect {
+  color: #222;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
+
+.connect:hover {
+  color: #999;
+  text-decoration: none !important;
+  text-transform: none !important;
+}
 
 .myjumbotron {
    display: table-cell;
    vertical-align: middle;
    max-width: 500px;
    margin: 0 auto;
-   color: white;
+   color: #222;
 }
 
 .projects {
@@ -49,7 +94,7 @@ body {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #222;
   }
 }
 
@@ -58,7 +103,7 @@ body {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #222;
   }
 }
 
@@ -67,7 +112,7 @@ body {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #222;
   }
 }
 
@@ -76,7 +121,7 @@ body {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #222;
   }
 }
 
@@ -85,7 +130,7 @@ body {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #222;
   }
 }
 
