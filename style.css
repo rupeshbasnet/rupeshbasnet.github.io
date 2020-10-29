@@ -53,6 +53,10 @@ body {
   letter-spacing: 0.5em !important;
 }
 
+.canvas {
+  margin-bottom: 50px;
+}
+
 .address {
   color: #ddd;
   font-size: 0.875rem;
